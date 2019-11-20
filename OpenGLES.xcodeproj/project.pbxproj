@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		793096BD2383EDAE002CC717 /* GLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793096BC2383EDAE002CC717 /* GLBaseViewController.m */; };
+		79C76D832384205A00E36E16 /* GLBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79C76D822384205A00E36E16 /* GLBaseViewController.xib */; };
+		79E8135C237ED620000318D3 /* vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 79E8135B237ED620000318D3 /* vertex.glsl */; };
+		79E8135E237ED637000318D3 /* fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 79E8135D237ED637000318D3 /* fragment.glsl */; };
 		D701AE4F2233FB0800E3BFB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D701AE4E2233FB0800E3BFB3 /* AppDelegate.m */; };
 		D701AE522233FB0800E3BFB3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D701AE512233FB0800E3BFB3 /* ViewController.m */; };
 		D701AE552233FB0800E3BFB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D701AE532233FB0800E3BFB3 /* Main.storyboard */; };
 		D701AE572233FB0C00E3BFB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D701AE562233FB0C00E3BFB3 /* Assets.xcassets */; };
-		D701AE5A2233FB0C00E3BFB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D701AE582233FB0C00E3BFB3 /* LaunchScreen.storyboard */; };
 		D701AE5D2233FB0C00E3BFB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D701AE5C2233FB0C00E3BFB3 /* main.m */; };
 		D701AE672233FB0C00E3BFB3 /* OpenGLESTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D701AE662233FB0C00E3BFB3 /* OpenGLESTests.m */; };
 /* End PBXBuildFile section */
@@ -27,6 +30,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		793096BB2383EDAE002CC717 /* GLBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLBaseViewController.h; sourceTree = "<group>"; };
+		793096BC2383EDAE002CC717 /* GLBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLBaseViewController.m; sourceTree = "<group>"; };
+		79C76D822384205A00E36E16 /* GLBaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GLBaseViewController.xib; sourceTree = "<group>"; };
+		79E8135B237ED620000318D3 /* vertex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = vertex.glsl; sourceTree = "<group>"; };
+		79E8135D237ED637000318D3 /* fragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = fragment.glsl; sourceTree = "<group>"; };
 		D701AE4A2233FB0800E3BFB3 /* OpenGLES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLES.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D701AE4D2233FB0800E3BFB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D701AE4E2233FB0800E3BFB3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -34,7 +42,6 @@
 		D701AE512233FB0800E3BFB3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D701AE542233FB0800E3BFB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D701AE562233FB0C00E3BFB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D701AE592233FB0C00E3BFB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D701AE5B2233FB0C00E3BFB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D701AE5C2233FB0C00E3BFB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D701AE622233FB0C00E3BFB3 /* OpenGLESTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenGLESTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +67,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		793096BA2383ED8B002CC717 /* 基础 */ = {
+			isa = PBXGroup;
+			children = (
+				793096BB2383EDAE002CC717 /* GLBaseViewController.h */,
+				793096BC2383EDAE002CC717 /* GLBaseViewController.m */,
+				79C76D822384205A00E36E16 /* GLBaseViewController.xib */,
+			);
+			path = "基础";
+			sourceTree = "<group>";
+		};
 		D701AE412233FB0800E3BFB3 = {
 			isa = PBXGroup;
 			children = (
@@ -81,15 +98,17 @@
 		D701AE4C2233FB0800E3BFB3 /* OpenGLES */ = {
 			isa = PBXGroup;
 			children = (
+				793096BA2383ED8B002CC717 /* 基础 */,
 				D701AE4D2233FB0800E3BFB3 /* AppDelegate.h */,
 				D701AE4E2233FB0800E3BFB3 /* AppDelegate.m */,
 				D701AE502233FB0800E3BFB3 /* ViewController.h */,
 				D701AE512233FB0800E3BFB3 /* ViewController.m */,
 				D701AE532233FB0800E3BFB3 /* Main.storyboard */,
 				D701AE562233FB0C00E3BFB3 /* Assets.xcassets */,
-				D701AE582233FB0C00E3BFB3 /* LaunchScreen.storyboard */,
 				D701AE5B2233FB0C00E3BFB3 /* Info.plist */,
 				D701AE5C2233FB0C00E3BFB3 /* main.m */,
+				79E8135B237ED620000318D3 /* vertex.glsl */,
+				79E8135D237ED637000318D3 /* fragment.glsl */,
 			);
 			path = OpenGLES;
 			sourceTree = "<group>";
@@ -183,7 +202,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D701AE5A2233FB0C00E3BFB3 /* LaunchScreen.storyboard in Resources */,
+				79E8135E237ED637000318D3 /* fragment.glsl in Resources */,
+				79C76D832384205A00E36E16 /* GLBaseViewController.xib in Resources */,
+				79E8135C237ED620000318D3 /* vertex.glsl in Resources */,
 				D701AE572233FB0C00E3BFB3 /* Assets.xcassets in Resources */,
 				D701AE552233FB0800E3BFB3 /* Main.storyboard in Resources */,
 			);
@@ -206,6 +227,7 @@
 				D701AE522233FB0800E3BFB3 /* ViewController.m in Sources */,
 				D701AE5D2233FB0C00E3BFB3 /* main.m in Sources */,
 				D701AE4F2233FB0800E3BFB3 /* AppDelegate.m in Sources */,
+				793096BD2383EDAE002CC717 /* GLBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,14 +256,6 @@
 				D701AE542233FB0800E3BFB3 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D701AE582233FB0C00E3BFB3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D701AE592233FB0C00E3BFB3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -364,6 +378,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XW8565VE4F;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				INFOPLIST_FILE = OpenGLES/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -380,6 +396,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XW8565VE4F;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				INFOPLIST_FILE = OpenGLES/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
