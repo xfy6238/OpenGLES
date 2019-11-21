@@ -10,7 +10,6 @@
 
 @interface TranslateController()
 
-@property (assign, nonatomic) GLKMatrix4 transformMatrrix;
 
 @end
 
@@ -19,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //一个4x4 的矩阵
-    self.transformMatrrix = GLKMatrix4Identity;
+    self.transformMatrix = GLKMatrix4Identity;
 }
 
 //MARK:update Delegate
@@ -39,15 +38,15 @@
     //因为想要使这个点 先缩放,再旋转,最后平移;
     //而矩阵可以看成一个点会经过怎么样的变换; 由于矩阵的相乘不具备交换性, 所以顺序不能错
     //点经过矩阵的顺序是从右向左,写成下面的形式才是 选scale 再rotate, 最后translate
-    self.transformMatrrix = GLKMatrix4Multiply(translateMatrix, rotateMatrix);
-    self.transformMatrrix = GLKMatrix4Multiply(self.transformMatrrix, scaleMatrix);
+    self.transformMatrix = GLKMatrix4Multiply(translateMatrix, rotateMatrix);
+    self.transformMatrix = GLKMatrix4Multiply(self.transformMatrix, scaleMatrix);
 }
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
     [super glkView:view drawInRect:rect];
     
     GLuint transformUniformLocation = glGetUniformLocation(self.shaderProgram, "transform");
-    glUniformMatrix4fv(transformUniformLocation, 1, 0, self.transformMatrrix.m);
+    glUniformMatrix4fv(transformUniformLocation, 1, 0, self.transformMatrix.m);
     [self drawTriangle];
 }
 

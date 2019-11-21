@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		793096BD2383EDAE002CC717 /* GLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793096BC2383EDAE002CC717 /* GLBaseViewController.m */; };
 		7941F45D238582CA00810518 /* TranslateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7941F45C238582CA00810518 /* TranslateController.m */; };
+		79743DAA2386B41B00C13E11 /* MatrixController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79743DA92386B41B00C13E11 /* MatrixController.m */; };
+		79743DAC2386B7D900C13E11 /* matriVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 79743DAB2386B7D900C13E11 /* matriVertex.glsl */; };
 		79C76D832384205A00E36E16 /* GLBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79C76D822384205A00E36E16 /* GLBaseViewController.xib */; };
 		79E8135C237ED620000318D3 /* vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 79E8135B237ED620000318D3 /* vertex.glsl */; };
 		79E8135E237ED637000318D3 /* fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 79E8135D237ED637000318D3 /* fragment.glsl */; };
@@ -35,6 +37,9 @@
 		793096BC2383EDAE002CC717 /* GLBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLBaseViewController.m; sourceTree = "<group>"; };
 		7941F45B238582CA00810518 /* TranslateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TranslateController.h; sourceTree = "<group>"; };
 		7941F45C238582CA00810518 /* TranslateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TranslateController.m; sourceTree = "<group>"; };
+		79743DA82386B41B00C13E11 /* MatrixController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatrixController.h; sourceTree = "<group>"; };
+		79743DA92386B41B00C13E11 /* MatrixController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatrixController.m; sourceTree = "<group>"; };
+		79743DAB2386B7D900C13E11 /* matriVertex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = matriVertex.glsl; sourceTree = "<group>"; };
 		79C76D822384205A00E36E16 /* GLBaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GLBaseViewController.xib; sourceTree = "<group>"; };
 		79E8135B237ED620000318D3 /* vertex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = vertex.glsl; sourceTree = "<group>"; };
 		79E8135D237ED637000318D3 /* fragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = fragment.glsl; sourceTree = "<group>"; };
@@ -85,6 +90,9 @@
 			children = (
 				7941F45B238582CA00810518 /* TranslateController.h */,
 				7941F45C238582CA00810518 /* TranslateController.m */,
+				79743DA82386B41B00C13E11 /* MatrixController.h */,
+				79743DA92386B41B00C13E11 /* MatrixController.m */,
+				79743DAB2386B7D900C13E11 /* matriVertex.glsl */,
 			);
 			path = "形变";
 			sourceTree = "<group>";
@@ -220,6 +228,7 @@
 				79E8135C237ED620000318D3 /* vertex.glsl in Resources */,
 				D701AE572233FB0C00E3BFB3 /* Assets.xcassets in Resources */,
 				D701AE552233FB0800E3BFB3 /* Main.storyboard in Resources */,
+				79743DAC2386B7D900C13E11 /* matriVertex.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +248,7 @@
 			files = (
 				D701AE522233FB0800E3BFB3 /* ViewController.m in Sources */,
 				D701AE5D2233FB0C00E3BFB3 /* main.m in Sources */,
+				79743DAA2386B41B00C13E11 /* MatrixController.m in Sources */,
 				D701AE4F2233FB0800E3BFB3 /* AppDelegate.m in Sources */,
 				793096BD2383EDAE002CC717 /* GLBaseViewController.m in Sources */,
 				7941F45D238582CA00810518 /* TranslateController.m in Sources */,

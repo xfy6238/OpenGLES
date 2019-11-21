@@ -14,11 +14,15 @@
 @property (assign, nonatomic) GLuint shaderProgram;
 
 //elapsedTime 表示程序运行经过时间的秒数
-
 @property (assign, nonatomic) GLfloat elapsedTime;
+
+@property (assign, nonatomic) GLKMatrix4 transformMatrix;
+
 
 - (void)update;
 - (void)bindAttribs:(GLfloat *)triangleData;
-
+//设置着色器
+- (void)setupShaderWithVertexShaderName:(NSString *)vertexShaderName
+                     fragmentShaderName:(NSString *)fragmentShaderName;
 @end
 

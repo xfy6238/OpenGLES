@@ -31,10 +31,13 @@ void main(void) {
 
 */
 
+ //矩阵的使用
 void main(void) {
     fragColor = color;
     gl_Position = transform * position;
 }
+
+
 
 
 

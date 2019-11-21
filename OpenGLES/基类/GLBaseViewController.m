@@ -24,7 +24,7 @@
     [super viewDidLoad];
 
     [self setupContext];
-    [self setupShader];
+    [self setupShaderWithVertexShaderName:@"vertex" fragmentShaderName:@"fragment"];
 }
 
 
@@ -93,9 +93,9 @@
 
 
 //设置着色器
-- (void)setupShader {
-    NSString *vertexShaderPath = [[NSBundle mainBundle] pathForResource:@"vertex" ofType:@"glsl"];
-    NSString *fragmentShaderPath = [[NSBundle mainBundle] pathForResource:@"fragment" ofType:@"glsl"];
+- (void)setupShaderWithVertexShaderName:(NSString *)vertexShaderName fragmentShaderName:(NSString *)fragmentShaderName{
+    NSString *vertexShaderPath = [[NSBundle mainBundle] pathForResource:vertexShaderName ofType:@"glsl"];
+    NSString *fragmentShaderPath = [[NSBundle mainBundle] pathForResource:fragmentShaderName ofType:@"glsl"];
     NSString *vertextShaderContent = [NSString stringWithContentsOfFile:vertexShaderPath encoding:NSUTF8StringEncoding error:nil];
     NSString *fragmenttShaderContent = [NSString stringWithContentsOfFile:fragmentShaderPath encoding:NSUTF8StringEncoding error:nil];
 
@@ -104,6 +104,9 @@
     createProgram(vertextShaderContent.UTF8String,fragmenttShaderContent.UTF8String, &program);
     self.shaderProgram = program;
 }
+
+
+
 
 //MARK: Prepare Shders 自定义方法创建着色器程序
 bool createProgram (const char *vertexShader, const char *fragmentShader, GLuint *pProgram) {
