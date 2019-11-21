@@ -17,6 +17,9 @@ attribute vec4 color;
 uniform float elapsedTime;
 varying vec4 fragColor;
 
+//用于矩阵的变量
+uniform mat4 transform;
+/*
 void main(void) {
     fragColor = color;
     //elapsedTime 表示程序运行经过时间的秒数
@@ -25,3 +28,13 @@ void main(void) {
     float yPos = position.x * sin(angle) + position.y * cos(angle);
     gl_Position = vec4(xPos,yPos, position.z, 1.0);
 }
+
+*/
+
+void main(void) {
+    fragColor = color;
+    gl_Position = transform * position;
+}
+
+
+

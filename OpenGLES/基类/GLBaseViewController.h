@@ -9,10 +9,16 @@
 #import <GLKit/GLKit.h>
 
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface GLBaseViewController : GLKViewController
+
+@property (assign, nonatomic) GLuint shaderProgram;
+
+//elapsedTime 表示程序运行经过时间的秒数
+
+@property (assign, nonatomic) GLfloat elapsedTime;
+
+- (void)update;
+- (void)bindAttribs:(GLfloat *)triangleData;
 
 @end
 
-NS_ASSUME_NONNULL_END
