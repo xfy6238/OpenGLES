@@ -68,7 +68,11 @@
 
     float viewWidth = self.view.frame.size.width;
     float viewHeight = self.view.frame.size.height;
-    
+    //原先的屏幕的x轴从左到右是-1到1, y轴是从上到下是1到-1;
+    //前两个参数 指定了 平截头体的左右坐标
+    //三四 参数 指定了平截头体的底部和上部
+    //五六 参数 顶一个近平面和远平面的距离
+    //这个指定的投影矩阵 将处于x,y,z 范围之间的坐标转换到标准化设备坐标系中
     GLKMatrix4 ortMatrix = GLKMatrix4MakeOrtho(-viewWidth/2.0, viewWidth/2, -viewHeight/2, viewHeight/2, -10, 10);
     GLKMatrix4 scaleMatrix = GLKMatrix4MakeScale(200, 200, 200);
     self.transformMatrix = GLKMatrix4Multiply(scaleMatrix, rotateMatrix);

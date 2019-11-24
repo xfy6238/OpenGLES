@@ -10,6 +10,7 @@
 #import "GLBaseViewController.h"
 #import "TranslateController.h"
 #import "MatrixController.h"
+#import "CamerController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -34,11 +35,13 @@
     NSString *str1 = @"OpenGL基础";
     NSString *str2 = @"形变";
     NSString *str3 = @"矩阵";
+    NSString *str4 = @"摄像机";
 
 
     [_datasource addObject:str1];
     [_datasource addObject:str2];
     [_datasource addObject:str3];
+    [_datasource addObject:str4];
 
 }
 
@@ -71,6 +74,10 @@
    if ([currentStr containsString:@"矩阵"]) {
          con = [[MatrixController alloc]init];
      }
+    
+    if ([currentStr containsString:@"摄像机"]) {
+          con = [[CamerController alloc]init];
+      }
     
     [self.navigationController pushViewController:con animated:YES];
 }
